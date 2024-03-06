@@ -1,53 +1,55 @@
-# Sistema de Recomendación de Compatibilidad de Inquilinos
+# Tenant Compatibility Recommendation System
 
-## Descripción del Proyecto
-Este proyecto desarrolla una aplicación interactiva con Streamlit para facilitar la búsqueda y recomendación de inquilinos compatibles, basándose en un análisis detallado de hábitos personales, preferencias de estilo de vida y compatibilidad de personalidad. Emplea técnicas de procesamiento de datos y algoritmos de machine learning para analizar un dataset exhaustivo de inquilinos, proporcionando insights precisos y recomendaciones para mejorar el proceso de selección de inquilinos en propiedades residenciales.
+## Project Description
+This project develops an interactive application with Streamlit to facilitate the search and recommendation of compatible tenants, based on a detailed analysis of personal habits, lifestyle preferences, and personality compatibility. It employs data processing techniques and machine learning algorithms to analyze an exhaustive dataset of tenants, providing precise insights and recommendations to improve the tenant selection process in residential properties.
 
-### Tecnologías y Técnicas Empleadas
-El proyecto integra diversas herramientas y técnicas de data science y machine learning, incluyendo:
+### Technologies and Techniques Employed
+The project integrates various data science and machine learning tools and techniques, including:
 
-- **Streamlit**: Para crear una interfaz de usuario interactiva y amigable que permite a los usuarios interactuar fácilmente con el modelo de recomendación.
-- **Pandas y Numpy**: Utilizados para la manipulación y análisis de datos, facilitando la gestión del dataset de inquilinos y la preparación de datos para el modelado.
-- **Scikit-learn**: Emplea herramientas de preprocesamiento como `OneHotEncoder` para convertir variables categóricas en un formato adecuado para los algoritmos de machine learning, y se utiliza para desarrollar modelos de clasificación o clustering que podrían estar en el corazón del sistema de recomendación.
-- **Matplotlib y Seaborn**: Para la visualización de datos, proporcionando gráficos y tablas que permiten interpretar la compatibilidad entre inquilinos y otras métricas relevantes de manera intuitiva.
+- **Streamlit**: For creating an interactive and user-friendly interface that allows users to easily interact with the recommendation model.
+- **Pandas and Numpy**: Used for data manipulation and analysis, facilitating the management of the tenant dataset and data preparation for modeling.
+- **Scikit-learn**: Employs preprocessing tools like `OneHotEncoder` to convert categorical variables into a format suitable for machine learning algorithms, and is used to develop classification or clustering models that could be at the heart of the recommendation system.
+- **Matplotlib and Seaborn**: For data visualization, providing graphs and tables that allow for intuitive interpretation of tenant compatibility and other relevant metrics.
 
-### Análisis de Compatibilidad
-El núcleo del sistema de recomendación se basa en algoritmos avanzados de machine learning para evaluar la compatibilidad entre inquilinos potenciales. Este análisis podría incluir:
+### Compatibility Analysis
+The core of the recommendation system is based on advanced machine learning algorithms to assess compatibility between potential tenants. This analysis could include:
 
-- **Técnicas de Clustering**: Para agrupar inquilinos con características y preferencias similares, facilitando la identificación de matches compatibles.
-- **Análisis de Componentes Principales (PCA)**: Para reducir la dimensionalidad de los datos y mejorar la eficiencia de los algoritmos de clustering o clasificación.
-- **Sistemas de Recomendación Basados en Filtros Colaborativos o Contenido**: Personalizando las recomendaciones basadas en similitudes entre inquilinos y sus preferencias.
+- **Clustering Techniques**: To group tenants with similar characteristics and preferences, facilitating the identification of compatible matches.
+- **Principal Component Analysis (PCA)**: To reduce the dimensionality of the data and improve the efficiency of clustering or classification algorithms.
+- **Recommendation Systems Based on Collaborative Filtering or Content**: Personalizing recommendations based on similarities between tenants and their preferences.
+
 
 ![ProcessFlowStreamlitApplicationt](./docs/ProcessFlowStreamlitApplication(7).png)
+### Intuitive Interface with Streamlit
+The application uses Streamlit to provide a smooth and dynamic user experience, where users can:
 
-### Interfaz Intuitiva con Streamlit
-La aplicación utiliza Streamlit para proporcionar una experiencia de usuario fluida y dinámica, donde los usuarios pueden:
+- Enter tenant preferences and requirements.
+- View recommendations of compatible tenants.
+- Explore detailed analyses and visualizations of compatibility.
 
-- Ingresar preferencias y requisitos de inquilinos.
-- Visualizar recomendaciones de inquilinos compatibles.
-- Explorar análisis detallados y visualizaciones de compatibilidad.
-## Estructura del Proyecto
+## Project Structure
 
-El proyecto de **Sistema de Recomendación de Compatibilidad de Inquilinos** está organizado en varios archivos y directorios clave que trabajan conjuntamente para proporcionar una solución completa de análisis y recomendación basada en datos de inquilinos. Aquí se describe la función y el propósito de cada archivo importante dentro de la estructura del proyecto:
+The **Tenant Compatibility Recommendation System** project is organized into several key files and directories that work together to provide a complete analysis and recommendation solution based on tenant data. Here is described the function and purpose of each important file within the project structure:
 
-- **`app.py`**: Este es el script principal de la aplicación de Streamlit. Define la interfaz de usuario (UI) y maneja la interacción del usuario con la aplicación. Aquí se configuran las visualizaciones, se capturan las entradas del usuario y se muestran los resultados de las recomendaciones de compatibilidad entre inquilinos.
+- **`app.py`**: This is the main Streamlit application script. It defines the user interface (UI) and handles user interaction with the application. Here, visualizations are set up, user inputs are captured, and the results of the tenant compatibility recommendations are displayed.
 
-- **`ayudantes.py`**: Contiene funciones auxiliares y de utilidad que son usadas a lo largo del proyecto. Esto incluye funciones para procesamiento de datos, generación de visualizaciones específicas, y cualquier otra operación recurrente necesaria para apoyar la lógica principal del sistema de recomendación.
+- **`ayudantes.py`**: Contains auxiliary and utility functions that are used throughout the project. This includes functions for data processing, generating specific visualizations, and any other recurring operation needed to support the main logic of the recommendation system.
 
-- **`logica.py`**: Implementa la lógica de negocio central del proyecto. Aquí se encuentran los algoritmos y métodos de machine learning utilizados para analizar el dataset de inquilinos, calcular las métricas de compatibilidad y generar las recomendaciones. Este archivo es crucial para el funcionamiento del sistema de recomendación.
+- **`logica.py`**: Implements the core business logic of the project. Here are found the machine learning algorithms and methods used to analyze the tenant dataset, calculate compatibility metrics, and generate recommendations. This file is crucial for the operation of the recommendation system.
 
-- **`dataset_inquilinos.csv`**: Es el conjunto de datos principal utilizado por el proyecto. Contiene información detallada sobre los inquilinos, incluyendo sus preferencias personales, hábitos, y otros atributos relevantes que son utilizados para evaluar la compatibilidad entre ellos.
+- **`dataset_inquilinos.csv`**: Is the main dataset used by the project. It contains detailed information about the tenants, including their personal preferences, habits, and other relevant attributes that are used to assess compatibility among them.
 
-- **`metadatos.xlsx`**: Proporciona información adicional y metadatos sobre el dataset de inquilinos. Este archivo puede incluir descripciones de las columnas, detalles sobre la recopilación de datos, y cualquier otra información de contexto que ayude a entender y trabajar con el dataset.
+- **`metadatos.xlsx`**: Provides additional information and metadata about the tenant dataset. This file may include descriptions of the columns, details about data collection, and any other contextual information that helps to understand and work with the dataset.
 
-### Organización del Código
+### Code Organization
 
-El código está estructurado de manera modular para promover la reutilización y facilitar el mantenimiento. Cada archivo `.py` se enfoca en aspectos específicos del proyecto, desde la interfaz de usuario hasta la lógica de procesamiento de datos y las operaciones de backend. Esta organización modular permite que el proyecto sea escalable y fácil de actualizar o modificar según sea necesario.
+The code is structured in a modular way to promote reuse and facilitate maintenance. Each `.py` file focuses on specific aspects of the project, from the user interface to the data processing logic and backend operations. This modular organization allows the project to be scalable and easy to update or modify as needed.
 
-### Visualizaciones y Análisis de Datos
+### Visualizations and Data Analysis
 
-Las visualizaciones son generadas utilizando **Matplotlib** y **Seaborn**, integradas directamente en la interfaz de Streamlit a través de `app.py`. Estas visualizaciones son fundamentales para presentar los resultados de las recomendaciones de compatibilidad de manera intuitiva y accesible para los usuarios.
+Visualizations are generated using **Matplotlib** and **Seaborn**, integrated directly into the Streamlit interface through `app.py`. These visualizations are fundamental to presenting the results of the compatibility recommendations in an intuitive and accessible way for users.
 
-### Procesamiento y Análisis de Datos
+### Data Processing and Analysis
 
-El preprocesamiento y análisis de datos se llevan a cabo utilizando **Pandas**, **Numpy**, y **Scikit-learn**, aprovechando sus amplias capacidades para manipular datasets complejos y aplicar técnicas de machine learning.
+Data preprocessing and analysis are carried out using **Pandas**, **Numpy**, and **Scikit-learn**, leveraging their extensive capabilities to handle complex datasets and apply machine learning techniques.
+
