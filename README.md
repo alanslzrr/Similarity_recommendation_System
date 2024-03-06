@@ -18,6 +18,8 @@ El núcleo del sistema de recomendación se basa en algoritmos avanzados de mach
 - **Análisis de Componentes Principales (PCA)**: Para reducir la dimensionalidad de los datos y mejorar la eficiencia de los algoritmos de clustering o clasificación.
 - **Sistemas de Recomendación Basados en Filtros Colaborativos o Contenido**: Personalizando las recomendaciones basadas en similitudes entre inquilinos y sus preferencias.
 
+![ProcessFlowStreamlitApplicationt](./docs/ProcessFlowStreamlitApplication(7).png)
+
 ### Interfaz Intuitiva con Streamlit
 La aplicación utiliza Streamlit para proporcionar una experiencia de usuario fluida y dinámica, donde los usuarios pueden:
 
